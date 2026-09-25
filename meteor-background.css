@@ -1,0 +1,18 @@
+/* Adapted from the supplied shooting-star CSS; scoped to the content viewport. */
+.workspace-backdrop{position:absolute;inset:52px 0 0;z-index:0;overflow:hidden;pointer-events:none;user-select:none;contain:paint;background:radial-gradient(ellipse at 80% 100%,#e8eef8 0%,#f6f8fc 45%,#fff 85%)}
+.meteor-origin{position:absolute;left:var(--x);top:var(--y);width:0;height:0;transform:rotate(35deg)}
+.meteor-flight{position:absolute;width:0;height:2px;opacity:0;animation:workspace-meteor-flight var(--period) linear var(--delay) infinite}
+.meteor-tail{position:absolute;right:0;top:0;width:var(--tail);height:1.5px;border-radius:999px;transform-origin:right center;background:linear-gradient(90deg,transparent,#9eb5d5 45%,#6689b9);animation:workspace-meteor-tail var(--period) ease-in-out var(--delay) infinite}
+.meteor-flight::before,.meteor-flight::after{content:'';position:absolute;top:0;left:-7px;width:14px;height:1.5px;border-radius:100%;background:linear-gradient(90deg,transparent,#7899c8,transparent);animation:workspace-meteor-shine var(--period) ease-in-out var(--delay) infinite}
+.meteor-flight::before{--angle:45deg}.meteor-flight::after{--angle:-45deg}
+@keyframes workspace-meteor-flight{0%{transform:translateX(0);opacity:0}5%{opacity:0}12%{opacity:.7}24%{opacity:.58}36%,100%{transform:translateX(var(--travel));opacity:0}}
+@keyframes workspace-meteor-tail{0%,5%{transform:scaleX(0)}16%{transform:scaleX(1)}36%,100%{transform:scaleX(0)}}
+@keyframes workspace-meteor-shine{0%,5%{transform:rotate(var(--angle)) scaleX(0)}17%{transform:rotate(var(--angle)) scaleX(1)}36%,100%{transform:rotate(var(--angle)) scaleX(0)}}
+/* One persistent background is shared by all pages, including slide transitions. */
+.workspace-scroll{position:relative;z-index:1;background:transparent}
+.workspace-header{position:relative;z-index:3;background:var(--bg)}
+.page-ghost-track{background:transparent}
+.workspace .project-card{background:#ffffffbf}
+.workspace .project-card:hover{background:#fffffff0}
+.workspace .content-note{background:#f9fafcd9}
+@media(prefers-reduced-motion:reduce){.workspace-backdrop .meteor-origin{display:none}}

@@ -28,6 +28,9 @@ a:focus-visible,button:focus-visible{outline-color:#79579c}
 .entry-screen{color:#403047}
 .entry-surface,html.entry-pending::before{background:#f4f2f8}
 .entry-skip{color:#655272}
+.project-card>p{margin-bottom:8px}
+.project-card .project-contribution{font-size:14px;line-height:1.5;margin-bottom:12px}
+.project-contribution strong,.prose strong{font-weight:500;color:var(--ink)}
 .article-row>p{font-size:14px;line-height:1.65;color:var(--muted);margin-bottom:12px}
 .article-row .card-bottom,.text-link{color:#70508e}
 .sidebar-scroll,.workspace-scroll{scrollbar-color:#d3cdda transparent}

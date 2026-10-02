@@ -1,5 +1,5 @@
 /* Cold-white surfaces with localized reflected light. Source layout is unchanged. */
-:root{--bg:#f8f8fa;--ink:#24232b;--muted:#62616e;--faint:#75727e;--line:#e5e4eb;--hover:#eeecf3;--sidebar:#f5f5f8}
+:root{--bg:#f8f8fa;--ink:#24232b;--muted:#62616e;--faint:#6b6673;--line:#e5e4eb;--hover:#eeecf3;--sidebar:#f5f5f8}
 ::selection{background:#dacced;color:#31233f}
 a:focus-visible,button:focus-visible{outline-color:#79579c}
 .sidebar{border-color:#e8e7ed;background:linear-gradient(165deg,#f9f9fb,#f3f2f7)}

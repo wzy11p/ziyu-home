@@ -17,7 +17,7 @@
       window.entryFallback = setTimeout(() => document.documentElement.classList.remove('entry-pending'), 5000);
     }
   </script>
-  <link rel="stylesheet" href="ziyu-theme.css?v=resume-2">
+  <link rel="stylesheet" href="ziyu-theme.css?v=woqiao-1">
 </head>
 <body>
 <section id="entry-screen" class="entry-screen" role="dialog" aria-modal="true" aria-labelledby="entry-title" tabindex="-1" hidden>
@@ -43,6 +43,7 @@
         <div class="group-header"><a class="nav-row" href="#projects" data-route="projects" title="作品与实践"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v10H3z"/></svg><span class="nav-label">作品与实践</span></a><button class="group-toggle icon-button" type="button" aria-label="收起作品与实践分组" aria-expanded="true" aria-controls="projects-items" data-group-label="作品与实践"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m5 6 3 3 3-3"/></svg></button></div>
         <div id="projects-items" class="group-items" role="group" aria-label="作品与实践详情">
           <a class="list-row" href="#project-tool" data-route="project-tool" title="视频与直播 AI"><span class="nav-label">视频与直播 AI</span></a>
+          <a class="list-row" href="#project-woqiao" data-route="project-woqiao" title="卧巧 · AI 视频工作台"><span class="nav-label">卧巧 · AI 视频工作台</span></a>
           <a class="list-row" href="#project-ai" data-route="project-ai" title="未明 · 海龟汤推理室"><span class="nav-label">未明 · 海龟汤推理室</span></a>
           <a class="list-row" href="#project-experiment" data-route="project-experiment" title="一炷 · 赛博求签"><span class="nav-label">一炷 · 赛博求签</span></a>
           <a class="list-row" href="#project-origin" data-route="project-origin" title="原点工作室 · 产品工作台"><span class="nav-label">原点工作室 · 产品工作台</span></a>
@@ -80,6 +81,7 @@
       <div class="welcome">
         <div class="welcome-intro"><div><p class="eyebrow">你好，欢迎来到我的个人空间</p><h1 id="hero-title" tabindex="-1">王子瑜 ZiYu.</h1><p class="welcome-role">AI 产品经理，把真实需求做成可用的 AI 产品。</p><p class="welcome-description">2 年企业 AI 交付经验，霸王茶姬视频初审已正式投产。<br>独立开发未明与一炷，覆盖产品设计、开发部署与评测迭代。</p></div><img class="welcome-portrait" src="assets/ziyu/portrait-reading.png" width="5464" height="8192" alt="王子瑜的侧面肖像" fetchpriority="high" decoding="async"></div>
         <div class="welcome-links"><a class="quick-link" href="#projects" data-route="projects"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v10H3z"/></svg><span>看看我的作品</span></a><a class="quick-link" href="#writing" data-route="writing"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 12h7M9 16h7"/></svg><span>读读我的文字</span></a><a class="quick-link" href="#about" data-route="about"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><span>多了解我一点</span></a></div>
+        <a class="text-link" href="#project-woqiao" data-route="project-woqiao">最新开源：卧巧 · AI 视频工作台 →</a>
         <div class="welcome-platforms"><span>也可以在这些地方找到我</span><div><a href="https://github.com/wzy11p" target="_blank" rel="noopener noreferrer"><img class="platform-logo" src="assets/platforms/github.svg" width="24" height="24" alt="" aria-hidden="true"><span>GitHub</span></a><a href="#elsewhere" aria-label="微信公众号：子瑜.ZiYu，阅读文章"><img class="platform-logo" src="assets/platforms/wechat-official-account.svg" width="24" height="24" alt="" aria-hidden="true"><span>公众号 · 子瑜.ZiYu</span></a><a href="mailto:wzy11p@126.com">电子邮箱 ↗</a><a href="https://my.feishu.cn/wiki/VKMfwetJcisaXNkJRvHcHrEAn8g" target="_blank" rel="noopener noreferrer">飞书简历 ↗</a></div></div>
       </div>
     </section>
@@ -95,6 +97,12 @@
           <p>帮品牌自动初审短视频、监测直播风险，减少重复人工筛查。</p>
           <p class="project-contribution"><strong>我负责：</strong>需求调研、AI 工作流、自研插件与驻场交付。</p>
           <div class="card-bottom"><span>霸王茶姬已投产 · 约 1,500 条初审样片</span><span>查看项目 →</span></div>
+        </a>
+        <a class="project-card" href="#project-woqiao">
+          <div class="card-meta"><span>个人探索 · AIGC 创作</span><span>开源早期预览</span></div>
+          <h2>卧巧 · AI 视频工作台</h2>
+          <p>把人物图、动作参考与音乐组织成多镜头短片，逐镜生成、挑选，再剪辑导出。</p>
+          <div class="card-bottom"><span>本地运行 · 模型 API · MIT</span><span>查看项目 →</span></div>
         </a>
         <a class="project-card" href="#project-ai">
           <div class="card-meta"><span>独立产品</span><span>内测验证</span></div>
@@ -144,6 +152,29 @@
         <p>初审样片中，AI 与人工复核一致率约 85%。清扬直播监播单批约 3,882 条原始告警合并为 152 类，便于运营复核。</p>
         <p><strong>我的优势：</strong>不只搭 AI 工作流，还能从业务调研、自研插件、测试审计做到上线交付，把一次性方案沉淀为可复用产品。</p>
       </div>
+      <a class="text-link" href="#projects">← 全部作品与实践</a>
+    </section>
+    <section class="page reading-page" id="project-woqiao" data-motion="rise" data-page data-title="卧巧 · AI 视频工作台" hidden aria-labelledby="project-woqiao-title">
+      <div class="page-heading">
+        <div class="project-brand">
+          <img src="assets/projects/woqiao-logo.png" width="64" height="64" alt="卧巧的黑色眠鸟 Logo" loading="lazy" decoding="async">
+          <h1 id="project-woqiao-title" tabindex="-1">卧巧 · AI 视频工作台</h1>
+        </div>
+        <p class="page-description">把人物、动作、镜头和音乐，组织成自己的 AI 短片。</p>
+      </div>
+      <div class="document-meta"><span>个人 AIGC 创作探索</span><span>MIT 开源 · 早期预览</span></div>
+      <div class="prose">
+        <h2>做什么</h2>
+        <p>一个本地运行的 AI 漫剧与短视频创作工作台。上传人物图、场景图和可选动作参考，接入图像与视频模型 API，逐镜生成并挑选素材，再加入台词、配乐并导出 MP4。</p>
+        <h2>已经实现</h2>
+        <p>镜头与项目管理、GPT Image 参考图编辑、Seedance 多模态动作参考、候选挑选与视频导入，以及本地裁切、变速、拼接和混音。参考音乐与最终配乐分开，支持先做动作、后做剪辑。</p>
+        <h2>当前边界</h2>
+        <p>人物一致性与动作落拍需要人工检查和迭代。当前提供手工时间标记与按设置拼接，尚未实现自动节拍识别、Suno 直连或声音克隆。模型调用需要自行配置账号与额度，付费生成效果仍待端到端验收。</p>
+        <h2>项目来源</h2>
+        <p>基于 XiaoYunQue 开源代码持续改进，保留上游 MIT 许可与版权声明，重点完善个人创作者的镜头、动作与剪辑流程。</p>
+      </div>
+      <a class="text-link" href="https://github.com/wzy11p/woqiao" target="_blank" rel="noopener noreferrer">查看卧巧源码与安装说明 ↗</a>
+      <a class="text-link" href="https://github.com/wzy11p/woqiao/blob/main/docs/first-video.md" target="_blank" rel="noopener noreferrer">制作第一条短片 ↗</a>
       <a class="text-link" href="#projects">← 全部作品与实践</a>
     </section>
     <section class="page reading-page" id="project-ai" data-motion="rise" data-page data-title="未明 · 海龟汤推理室" hidden aria-labelledby="project-ai-title">
